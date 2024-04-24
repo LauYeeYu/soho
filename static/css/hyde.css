@@ -159,7 +159,7 @@ footer {
 }
 
 .sidebar {
-  background-color: #49757a;
+  background-color: #14537d;
   color: #fff;
 }
 
@@ -171,7 +171,7 @@ footer {
 footer a,
 .content a,
 .related-posts li a:hover {
-  color: #49757a;
+  color: #347bff;
 }
 
 .read-more-link {
@@ -181,14 +181,14 @@ footer a,
 .read-more-link a {
   padding: 8px 16px;
   border: 1px solid;
-  border-color: #49757a;
+  border-color: #347bff;
   border-radius: 4px;
 }
 
 .read-more-link a:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #49757a;
+  background-color: #347bff;
 }
 
 .pull-right {
@@ -262,20 +262,20 @@ ul.posts li,
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  color: #49757a;
-  border: 1px solid #49757a;
+  color: #347bff;
+  border: 1px solid #347bff;
   border-radius: 0;
 }
 
 .pagination li a:hover {
   color: #fff;
-  background-color: #49757a;
+  background-color: #347bff;
   opacity: 0.75;
 }
 
 .pagination li.active a {
   color: #fff;
-  background-color: #49757a;
+  background-color: #347bff;
 }
 
 .pagination li.disabled a {
