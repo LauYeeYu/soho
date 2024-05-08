@@ -371,3 +371,7 @@ figcaption {
 .nowrap {
   white-space: nowrap;
 }
+
+a.plain-link {
+  color: #313131;
+}
