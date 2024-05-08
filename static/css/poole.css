@@ -104,7 +104,20 @@ h4, h5, h6 {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+@media (min-width: 65.001em) {
+  p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 65em) {
+  p {
+    text-align: left;
+  }
+  
 }
 
 strong {
@@ -149,17 +162,19 @@ abbr[title] {
 code,
 pre,
 .highlight {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Jetbrains Mono", Monaco, "Courier New", monospace;
 }
 code {
   color: #e83e8c;
   white-space: pre;
+  font-size: 90%;
 }
 pre {
   display: block;
   overflow: auto;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
   line-height: 1.4;
   white-space: pre;
   background-color: #fff;
@@ -173,10 +188,9 @@ pre code {
 .highlight {
   font-size: 90%;
   margin-bottom: 1rem;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid;
   border-color: #ddd #ddd #ccc;
-  border-radius: 3px;
 }
 .highlight pre {
   margin-bottom: 0;

@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: 'Open Sans', 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, 'Source Sans Pro', Arial, 'Open Sans', 'Roboto', sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -65,12 +65,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
-  }
-
-  footer {
-    margin-left: 19rem !important;
-    margin-right: 1rem !important;
+    width: 30%;
   }
 }
 
@@ -126,8 +121,8 @@ footer {
   font-size: .7rem;
   text-align: center;
   height: 40px;
-  padding: 1rem 0;
-  margin: 0 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
   border-top: 1px solid #e0e0e0;
 }
 
@@ -135,9 +130,9 @@ footer {
 @media (min-width: 48em) {
   .content {
     max-width: 40rem;
-    margin-left: 20rem;
+    margin-left: 35%;
     margin-right: 2rem;
-    margin-bottom: -40px;
+    margin-bottom: -52px;
     min-height: 100%;
   }
 }
