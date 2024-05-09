@@ -1,0 +1,71 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #bbb;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ddd;
+  }
+  
+  .sidebar h1 {
+    color: #eee;
+  }
+
+  strong {
+    color: #ddd;
+  }
+
+  footer {
+    border-top-color: #555;
+  }
+
+  pre code {
+    opacity: 80%;
+  }
+
+  .post-date {
+    color: #858585;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #689af9;
+  }
+
+  .read-more-link a {
+    border-color: #689af9;
+  }
+
+  .read-more-link a:hover {
+    background-color: #689af9;
+  }
+
+  .pagination li a {
+    color: #689af9;
+    border: 1px solid #689af9;
+  }
+
+
+  .pagination li a:hover {
+    background-color: #689af9;
+  }
+
+  .pagination li.active a {
+    color: #fff;
+    background-color: #689af9;
+  }
+
+  a.plain-link {
+    color: #ddd;
+  }
+
+  a.share-icon {
+    color: #aaa;
+  }
+
+  .sidebar a {
+    color: #eee;
+  }
+}
