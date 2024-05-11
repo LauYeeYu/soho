@@ -68,4 +68,9 @@
   .sidebar a {
     color: #eee;
   }
+
+  a.tag-link {
+    background-color: #333;
+    color: #bbb !important;
+  }
 }
