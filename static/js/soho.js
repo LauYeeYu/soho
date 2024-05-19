@@ -66,6 +66,7 @@ $(document).ready(function(){
 });
 
 window.addEventListener('resize', function() {
+  if (this.document.querySelector('#sidebar-container') === null) return;
   const containerStyle = document.querySelector('#sidebar-container').style;
   const children = document.querySelectorAll('#sidebar-container div');
   var totalHeight = 0;
