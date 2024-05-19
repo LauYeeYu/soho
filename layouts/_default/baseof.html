@@ -58,7 +58,11 @@
   {{ end -}}
 </head>
 <body>
-  {{ partial "sidebar.html" . }}
+  {{ if or (eq .RelPermalink "/") (eq .RelPermalink "/index.html") }}
+    {{ partial "sidebar-full.html" . }}
+  {{ else }}
+    {{ partial "sidebar.html" . }}
+  {{ end }}
 
   <main class="content container">
   {{ block "main" . -}}{{- end }}

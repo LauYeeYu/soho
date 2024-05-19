@@ -45,4 +45,34 @@ $(document).ready(function(){
     window.open(`https://pinterest.com/pin/create/button/?url=${url}&media=&description=${text}`, "_blank").focus();
   });
 
+  $("#sidebar-wrap-toggle").click(function(e) {
+    e.preventDefault();
+    const containerStyle = document.querySelector('#sidebar-container').style;
+    const children = document.querySelectorAll('#sidebar-container div');
+    const toggle = document.querySelector('.sidebar-wrap-toggle-icon').style;
+    var totalHeight = 0;
+    children.forEach(child => {
+      totalHeight += parseInt(child.offsetHeight) + 20; // 20 is the margin-bottom
+    });
+    if (containerStyle.height === '0px' || containerStyle.height === '') {
+        containerStyle.height = `${totalHeight}px`;
+        toggle.transform = 'rotate(180deg)';
+    } else {
+      containerStyle.height = '0px';
+      toggle.transform = 'rotate(0deg)';
+    }
+  });
+
+});
+
+window.addEventListener('resize', function() {
+  const containerStyle = document.querySelector('#sidebar-container').style;
+  const children = document.querySelectorAll('#sidebar-container div');
+  var totalHeight = 0;
+  children.forEach(child => {
+    totalHeight += parseInt(child.offsetHeight) + 20; // 20 is the margin-bottom
+  });
+  if (containerStyle.height !== '0px' && containerStyle.height !== '') {
+    containerStyle.height = `${totalHeight}px`;
+  }
 });
