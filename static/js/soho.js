@@ -45,11 +45,11 @@ $(document).ready(function(){
     window.open(`https://pinterest.com/pin/create/button/?url=${url}&media=&description=${text}`, "_blank").focus();
   });
 
-  $("#sidebar-wrap-toggle").click(function(e) {
+  $("#sidebar-collapse-toggle").click(function(e) {
     e.preventDefault();
     const containerStyle = document.querySelector('#sidebar-container').style;
     const children = document.querySelectorAll('#sidebar-container div');
-    const toggle = document.querySelector('.sidebar-wrap-toggle-icon').style;
+    const toggle = document.querySelector('.sidebar-collapse-toggle-icon').style;
     var totalHeight = 0;
     children.forEach(child => {
       totalHeight += parseInt(child.offsetHeight) + 20; // 20 is the margin-bottom

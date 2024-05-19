@@ -64,13 +64,13 @@ html {
 }
 
 @media (min-width: 48em) {
-  .sidebar-wrap-padding {
+  .sidebar-collapse-padding {
     padding: 2rem 1rem;
   }
 }
 
 @media (max-width: 47.999em) {
-  .sidebar-wrap-padding {
+  .sidebar-collapse-padding {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-left: 1rem;
@@ -89,12 +89,12 @@ html {
 }
 
 @media (min-width: 48em) {
-  #sidebar-wrap-top {
+  #sidebar-collapse-top {
     display: none;
   }
 }
 @media (max-width: 47.999em) {
-  #sidebar-wrap-top {
+  #sidebar-collapse-top {
     min-height: 50px;
   }
   
@@ -106,14 +106,14 @@ html {
   }
 }
 
-#sidebar-wrap-toggle {
+#sidebar-collapse-toggle {
   position: absolute;
   right: 40px;
   font-size: 40px;
   margin-top: -5px;
 }
 
-.sidebar-wrap-toggle-icon {
+.sidebar-collapse-toggle-icon {
   transition: transform 0.2s ease-in-out;
 }
 
