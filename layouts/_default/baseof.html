@@ -81,6 +81,9 @@
   {{ range $.Site.Params.customJs -}}
   <script src="{{ . | relURL }}"></script>
   {{- end}}
+  {{ if .Store.Get "hasMermaid" }}
+  <script src="{{ `js/mermaid.js` | relURL }}" type="module"></script>
+  {{ end }}
 
     {{ if not hugo.IsServer }}
       {{ template "_internal/google_analytics.html" . }}

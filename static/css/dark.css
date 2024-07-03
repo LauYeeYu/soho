@@ -73,4 +73,8 @@
     background-color: #333;
     color: #bbb !important;
   }
+
+  pre {
+    background-color: #222;
+  }
 }
