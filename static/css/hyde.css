@@ -155,7 +155,7 @@ a.sidebar-nav-item:focus {
 .content {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  min-height: 50%;
+  min-height: 80%;
 }
 
 
@@ -180,7 +180,7 @@ footer {
     max-width: 48rem;
     margin-left: 35%;
     margin-right: 2rem;
-    margin-bottom: -52px;
+    margin-bottom: -56px;
     min-height: 100%;
   }
 }

@@ -287,6 +287,10 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 
+.main-container {
+  padding-bottom: 56px !important;
+}
+
 
 /*
  * Masthead
