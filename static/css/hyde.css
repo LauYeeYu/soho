@@ -422,3 +422,25 @@ a.plain-link {
 a.share-icon {
   color: #515151;
 }
+
+.w-post-nav {
+  width: 40%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a.link-post-nav {
+  color: #414141;
+  font-weight: bold !important;
+}
+
+.post-nav {
+  margin-top: 32px;
+}
+
+.vertically-center {
+  display: flex;
+  align-items: center;
+}

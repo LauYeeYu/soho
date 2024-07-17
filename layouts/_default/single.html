@@ -19,6 +19,25 @@
   {{ partial "share.html" . }}
   {{- end }}
 
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+  <nav class="flex post-nav">
+    <div class="flex w-post-nav vertically-center">
+      {{ with $pages.Next . }}
+      <a class="flex link-post-nav" href="{{ .Permalink }}"><span>← {{ .Name }}</span></a>
+      {{ end }}<!---->
+    </div>
+
+    <div class="flex text-center vertically-center">
+      <a class="link-post-nav" href="..">Back</a>
+    </div>
+ 
+    <div class="flex w-post-nav vertically-center">
+      {{ with $pages.Prev . }}
+      <a class="flex link-post-nav" href="{{ .Permalink }}"><span>{{ .Name }} →</span></a>
+      {{ end }}
+    </div>
+  </nav>
+
   {{ if (and .Site.Config.Services.Disqus.Shortname (ne .Params.DisableComments true) (ne .Params.disable_comments true)) -}}
   <div class="comments">
     <h2>Comments</h2>
