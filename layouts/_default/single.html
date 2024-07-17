@@ -23,17 +23,19 @@
   <nav class="flex post-nav">
     <div class="flex w-post-nav vertically-center">
       {{ with $pages.Next . }}
-      <a class="flex link-post-nav" href="{{ .Permalink }}"><span>← {{ .Name }}</span></a>
-      {{ end }}<!---->
+      <a class="flex link-post-nav" href="{{ .RelPermalink }}"><span>← {{ .Name }}</span></a>
+      {{ end }}
     </div>
 
     <div class="flex text-center vertically-center">
-      <a class="link-post-nav" href="..">Back</a>
+      {{ with .Parent }}
+      <a class="link-post-nav" href="{{ .RelPermalink }}">Back</a>
+      {{ end }}
     </div>
  
     <div class="flex w-post-nav vertically-center">
       {{ with $pages.Prev . }}
-      <a class="flex link-post-nav" href="{{ .Permalink }}"><span>{{ .Name }} →</span></a>
+      <a class="flex link-post-nav" href="{{ .RelPermalink }}"><span>{{ .Name }} →</span></a>
       {{ end }}
     </div>
   </nav>
