@@ -444,3 +444,8 @@ a.link-post-nav {
   display: flex;
   align-items: center;
 }
+
+.align-right {
+  text-align: right;
+  justify-content: flex-end;
+}
