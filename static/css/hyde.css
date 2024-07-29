@@ -84,7 +84,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 30%;
+    width: 28%;
   }
 }
 
@@ -178,7 +178,7 @@ footer {
 @media (min-width: 48em) {
   .content {
     max-width: 48rem;
-    margin-left: 35%;
+    margin-left: 32%;
     margin-right: 2rem;
     margin-bottom: -56px;
     min-height: 100%;
