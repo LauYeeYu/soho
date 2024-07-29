@@ -1,0 +1,4 @@
+<details>
+  <summary>{{ .Get "summary" | default "Click to expand" | markdownify }}</summary>
+  {{ .Inner | markdownify }}
+</details>
