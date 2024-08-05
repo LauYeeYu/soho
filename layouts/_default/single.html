@@ -19,7 +19,7 @@
   {{ partial "share.html" . }}
   {{- end }}
 
-  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+  {{ $pages := where site.RegularPages "Type" .Section }}<!---->
   <nav class="flex post-nav">
     <div class="flex w-post-nav vertically-center">
       {{ with $pages.Next . }}
