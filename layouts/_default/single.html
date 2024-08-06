@@ -9,6 +9,19 @@
   </div>
   {{- end }}
 
+  {{ if .Params.showToc -}}
+  <div>
+    {{ if eq .Section "blog" }}
+    <h2>Table of Contents</h2>
+    {{ else if eq .Section "blog-zh-cn" }}
+    <h2>目录</h2>
+    {{ else if eq .Section "blog-zh-tw" }}
+    <h2>目次</h2>
+    {{- end }}
+    {{ .TableOfContents }}
+  </div>
+  {{- end }}
+
   <div>
   {{ .Content }}
   </div>
