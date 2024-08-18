@@ -120,6 +120,13 @@ strong {
 }
 
 
+/* Table of Contents */
+.toc {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
 /* Lists */
 ul, ol, dl {
   margin-top: 0;
