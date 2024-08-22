@@ -1,0 +1,7 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+{{- if in (slice 2 3 4 6) .Level }}{{" " -}}
+<a class="plain-link no-underline" href="#{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</a>
+{{- else -}}
+{{ .Text | safeHTML }}
+{{- end -}}
+</h{{ .Level }}>

@@ -419,6 +419,14 @@ a.plain-link {
   color: #313131;
 }
 
+.no-underline:hover {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
 a.share-icon {
   color: #515151;
 }
