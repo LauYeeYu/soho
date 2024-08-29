@@ -42,21 +42,6 @@
     background-color: #689af9;
   }
 
-  .pagination li a {
-    color: #689af9;
-    border: 1px solid #689af9;
-  }
-
-
-  .pagination li a:hover {
-    background-color: #689af9;
-  }
-
-  .pagination li.active a {
-    color: #fff;
-    background-color: #689af9;
-  }
-
   a.plain-link {
     color: #ddd;
   }
@@ -98,5 +83,20 @@
     color: #bbb;
     border-top-color: #555;
     border-bottom-color: #444;
+  }
+
+  .pagination li a {
+    color: #bbb;
+    border-color: #bbb;
+  }
+  .pagination li a:hover {
+    background-color: #555;
+  }
+  .pagination li.active a {
+    color: #222;
+    background-color: #bbb;
+  }
+  .pagination li.disabled a {
+    color: rgba(128, 128, 128, 0.5);
   }
 }
