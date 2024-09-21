@@ -171,8 +171,12 @@ pre,
   font-family: "Jetbrains Mono", Monaco, "Courier New", monospace;
 }
 code {
-  color: #e83e8c;
+  color: #5a5a5a;
   white-space: pre;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eee;
+  border-radius: 5px;
   font-size: 85%;
 }
 pre {

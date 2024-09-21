@@ -31,6 +31,10 @@
   pre code {
     opacity: 80%;
   }
+  code {
+    background-color: #363636;
+    color: #aaaaaa;
+  }
 
   .post-date {
     color: #858585;
