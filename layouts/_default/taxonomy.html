@@ -8,15 +8,14 @@
     </article>
     <ul class="posts">
     {{- $paginator := .Paginate .Data.Pages -}}
-
     {{ range $paginator.Pages }}
-        <h2><a class="plain-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        {{ if eq .Kind "page" }}
-        <div><time class="nowrap post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
-        {{ end }}
-        <div>{{ plainify .Summary }}</div>
-        <p class="mt-3"><a class="link block plain-link" href="{{ .Permalink }}">Read more →</a></p>
+      <h2><a class="plain-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ if eq .Kind "page" }}
+      <div><time class="nowrap post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
       {{ end }}
+      <div>{{ plainify .Summary }}</div>
+      <p class="mt-3"><a class="link block plain-link" href="{{ .Permalink }}">Read more →</a></p>
+    {{ end }}
     </ul>
   </main>
   {{ template "_internal/pagination.html" . }}
