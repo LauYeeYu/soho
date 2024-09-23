@@ -16,8 +16,7 @@
         "url": {{ . | absURL | printf `"%s"` | safeJS }}
         {{ end -}}
         {{ end }}
-      },
-      "description": {{ .Site.Params.description }}
+      }
     },
     {
       "@type": "WebSite",
