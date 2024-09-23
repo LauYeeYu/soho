@@ -2,8 +2,11 @@
   <main>
     <article>
       <header>
-        <h1>{{ strings.FirstUpper .Data.Singular }}: {{ .Title }}</h1>
+        <h1><a class="plain-link" href="{{ .Parent.RelPermalink }}">{{ strings.FirstUpper .Data.Singular }}</a>: {{ .Title }}</h1>
       </header>
+      {{ if .Parent }}
+      <p><a class="plain-link" href="{{ .Parent.RelPermalink }}">← back to all {{ .Data.Plural }}</a></p>
+      {{ end }}
       {{ .Content }}
     </article>
     <ul class="posts">
