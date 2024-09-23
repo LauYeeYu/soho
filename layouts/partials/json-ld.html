@@ -16,14 +16,15 @@
         "url": {{ . | absURL | printf `"%s"` | safeJS }}
         {{ end -}}
         {{ end }}
-      }
+      },
+      "description": {{ with .Site.Params.description }}{{ . }}{{ else }}""{{ end }}
     },
     {
       "@type": "WebSite",
       "@id": {{ .Site.BaseURL | printf "%s#website" }},
       "url": {{ .Site.BaseURL }},
       "name": {{ .Site.Title }},
-      "description": {{ .Site.Params.description }},
+      "description": {{ with .Site.Params.description }}{{ . }}{{ else }}""{{ end }},
       "publisher": {
         "@id": {{ $.Site.BaseURL | printf "%s#author" }}
       },
@@ -55,7 +56,7 @@
       {{- if not .Lastmod.IsZero }}
       "dateModified": {{ .Lastmod.Format $ISO8601 }},
       {{- end }}
-      "description": {{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }},
+      "description": {{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ else }}""{{ end }}{{ end }}{{ end }},
       "inLanguage": {{ .Site.LanguageCode }},
       "potentialAction": [
         {
