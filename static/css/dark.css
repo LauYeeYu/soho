@@ -111,4 +111,8 @@
   .pagination li.disabled a {
     color: rgba(128, 128, 128, 0.5);
   }
+
+  .img-headshot {
+    border-color: #ddd;
+  }
 }
