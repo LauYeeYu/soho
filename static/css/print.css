@@ -1,4 +1,4 @@
-.sidebar, .share-buttons, .comments, .word-count, .series {
+.sidebar, .share-buttons, .comments {
   display: none !important;
 }
 

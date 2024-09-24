@@ -9,7 +9,7 @@
   <div class="post-date">
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
     <span class="word-count">&middot; {{ .WordCount }} words</span>
-    {{ if isSet .Params "series" }}&middot; Series: <a href="/series/{{ .Params.series }}" class="underline-link">{{ strings.FirstUpper .Params.series }}{{ with .Params.seriesAnnotation }} ({{ . }}){{ end }}</a></span>{{ end }}
+    {{ if isSet .Params "series" }}&middot; Series: <a href="/series/{{ .Params.series }}" class="underline-link">{{ strings.Title (strings.Replace .Params.series "-" " ") }}{{ with .Params.seriesAnnotation }} ({{ . }}){{ end }}</a></span>{{ end }}
   </div>
   {{- end }}
 

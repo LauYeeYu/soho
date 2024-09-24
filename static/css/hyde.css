@@ -542,4 +542,21 @@ a.link-post-nav {
   padding-right: 6px;
   font-weight: 100;
   margin-bottom: 5px;
+  font-size: 80%;
+  letter-spacing: -0.5px;
+}
+
+a.series {
+  color: #515151;
+}
+
+a.series:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+@media (min-width: 48em) {
+  .series-br {
+    display: none;
+  }
 }

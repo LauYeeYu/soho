@@ -123,4 +123,12 @@
   .img-headshot {
     border-color: #ddd;
   }
+
+  a.series {
+    color: #bbb;
+  }
+
+  a.series:hover {
+    color: #eee;
+  }
 }
