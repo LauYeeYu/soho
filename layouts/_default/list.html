@@ -11,7 +11,7 @@
 
     {{ range $paginator.Pages }}
       <h2>
-        {{ with .Params.series }}<span class="series">{{ . }}</span>{{ end }}
+        {{ partial "series-badge.html" . }}
         <a class="plain-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       </h2>
       {{ if eq .Kind "page" }}

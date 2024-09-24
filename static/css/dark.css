@@ -58,6 +58,14 @@
     color: #ddd;
   }
 
+  a.underline-link {
+    color: inherit;
+  }
+
+  a.underline-link:hover {
+    color: #ddd;
+  }
+
   a.link-post-nav {
     color: #aaa;
   }

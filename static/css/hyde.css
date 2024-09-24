@@ -433,6 +433,15 @@ a.plain-link {
   color: #313131;
 }
 
+a.underline-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a.underline-link:hover {
+  color: #313131;
+}
+
 .no-underline:hover {
   text-decoration: none;
 }

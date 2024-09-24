@@ -1,0 +1,3 @@
+{{ if isSet .Params "series" }}
+<span class="series">{{ strings.FirstUpper .Params.series }}{{ with .Params.seriesAnnotation }} {{ . }}{{ end }}</span>
+{{ end }}
