@@ -536,13 +536,12 @@ a.link-post-nav {
   border-width: 2px;
   border-color: currentColor;
   border-radius: 5px;
-  padding: 6px;
+  padding-top: 6px;
   padding-bottom: 2px;
   padding-left: 6px;
   padding-right: 6px;
   font-weight: 100;
   margin-bottom: 5px;
-  font-size: 80%;
   letter-spacing: -0.5px;
 }
 
