@@ -483,6 +483,7 @@ a.link-post-nav {
 
 .alert-heading {
   font-weight: bold;
+  overflow: visible;
 }
 
 .alert-note {
