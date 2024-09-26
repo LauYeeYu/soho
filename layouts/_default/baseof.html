@@ -11,6 +11,8 @@
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{- end }}
 
+  <link rel="canonical" href="{{ .Permalink }}" />
+
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
   {{ partial "seo.html" . }}
