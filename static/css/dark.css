@@ -131,4 +131,8 @@
   a.series:hover {
     color: #eee;
   }
+
+  .rss-color {
+    fill: #ddd;
+  }
 }

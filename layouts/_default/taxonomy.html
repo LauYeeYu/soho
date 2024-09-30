@@ -2,7 +2,7 @@
   <main>
     <article>
       <header>
-        <h1><a class="plain-link" href="{{ .Parent.RelPermalink }}">{{ strings.FirstUpper .Data.Singular }}</a>: {{ strings.Replace .Title "-" " " }}</h1>
+        <h1><a class="plain-link" href="{{ .Parent.RelPermalink }}">{{ strings.FirstUpper .Data.Singular }}</a>: {{ strings.Replace .Title "-" " " }} <a href="{{ .RelPermalink }}/index.xml" target="_blank" rel="alternative">{{ partial "icons/rss.html" . }}</a></h1>
       </header>
       {{ if .Parent }}
       <p><a class="plain-link" href="{{ .Parent.RelPermalink }}">← back to all {{ .Data.Plural }}</a></p>

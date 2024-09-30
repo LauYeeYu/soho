@@ -560,3 +560,12 @@ a.series:hover {
     display: none;
   }
 }
+
+.rss-color {
+  fill: #313131;
+}
+
+.rss {
+  height: 1.5rem;
+  bottom: 0;
+}
