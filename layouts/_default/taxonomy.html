@@ -1,8 +1,12 @@
 {{ define "main" }}
+{{ $topic := strings.Replace .Title "-" " " }}
+{{ if eq .Data.Singular "tag" }}
+  {{ $topic = strings.ToLower .Title }}
+{{ end }}
   <main>
     <article>
       <header>
-        <h1><a class="plain-link" href="{{ .Parent.RelPermalink }}">{{ strings.FirstUpper .Data.Singular }}</a>: {{ strings.Replace .Title "-" " " }} {{partial "rss.html" .}}</h1>
+        <h1><a class="plain-link" href="{{ .Parent.RelPermalink }}">{{ strings.FirstUpper .Data.Singular }}</a>: {{ $topic }} {{partial "rss.html" .}}</h1>
       </header>
       {{ if .Parent }}
       <p><a class="plain-link" href="{{ .Parent.RelPermalink }}">← back to all {{ .Data.Plural }}</a></p>

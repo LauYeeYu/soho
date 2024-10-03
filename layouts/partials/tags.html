@@ -5,7 +5,7 @@
   {{- with $.Site.GetPage "tags" -}}
   {{- with .GetPage $tag }}
   <li>
-    <a href="{{ .Permalink }}" class="tag-link">{{ .Title }}</a>
+    <a href="{{ .Permalink }}" class="tag-link">{{ strings.ToLower .Title }}</a>
   </li>
   {{ end -}}
   {{- end -}}
