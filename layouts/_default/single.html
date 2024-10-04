@@ -9,7 +9,7 @@
   <div class="post-date">
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
     <span>&middot; {{ .ReadingTime }} min read</span>
-    {{ if and .Params.categories (gt (len .Params.categories) 0) }} 
+    {{ if and (isSet .Params "categories") (gt (len .Params.categories) 0) }} 
       <span>&middot; {{ if gt (len .Params.categories) 1 }}Categories{{ else }}Category{{ end }}:
       {{ range $index, $cat := .Params.categories }}{{ if $index }}, {{ end }}<a href="/categories/{{ $cat | urlize }}" class="underline-link">{{ strings.Title (strings.Replace $cat "-" " ") }}</a>{{ end }}
       </span>
