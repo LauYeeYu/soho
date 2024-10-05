@@ -125,11 +125,19 @@ html {
 }
 
 /* About section */
-.sidebar-about h1 {
+.sidebar-name {
   color: #fff;
   margin-top: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 400;
+  margin-bottom: .5rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.sidebar-zh-name {
+  font-size: 1.75rem;
+  opacity: 85%;
 }
 
 /* Sidebar nav */
@@ -223,7 +231,7 @@ footer {
 }
 
 .sidebar a,
-.sidebar-about h1 {
+.sidebar-name h1 {
   color: #fff;
 }
 
