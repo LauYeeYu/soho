@@ -48,11 +48,14 @@ $(document).ready(function(){
   $("#sidebar-collapse-toggle").click(function(e) {
     e.preventDefault();
     const containerStyle = document.querySelector('#sidebar-container').style;
-    const children = document.querySelectorAll('#sidebar-container div');
+    const sidebar = document.querySelector('#sidebar-container');
+    const children = sidebar.querySelectorAll(':scope > *');
     const toggle = document.querySelector('.sidebar-collapse-toggle-icon').style;
     var totalHeight = 0;
     children.forEach(child => {
-      totalHeight += parseInt(child.offsetHeight) + 20; // 20 is the margin-bottom
+      if (child.style.display !== 'none') {
+        totalHeight += parseInt(child.offsetHeight) + 20; // 20 is the margin-bottom
+      }
     });
     if (containerStyle.height === '0px' || containerStyle.height === '') {
         containerStyle.height = `${totalHeight}px`;
