@@ -578,3 +578,46 @@ a.series:hover {
 .rss {
   height: 1.2rem;
 }
+
+.rainbow-slogan {
+  margin-top: -1rem;
+  position: absolute;
+  overflow: hidden;
+}
+.rainbow-slogan-text {
+  right: 7.5rem;
+  margin-top: -0.8rem;
+}
+
+.rainbow-slogan-icon {
+  right: 1rem;
+}
+
+.rainbow-icon {
+  margin-top: -50%;
+  margin-bottom: 0;
+  height: 6rem;
+  position: relative;
+}
+
+@media (min-width: 48em) {
+  .rainbow-slogan-text {
+    right: 14.5rem;
+  }
+  .rainbow-icon {
+    height: 12rem;
+  }
+  .rainbow-slogan-icon {
+    right: 2rem;
+  }
+}
+
+.rainbow-text {
+  font-size: 95%;
+  font-family: "Jetbrains Mono", Monaco, "Courier New", monospace;
+  text-decoration: underline;
+}
+
+.rainbow-text:hover {
+  font-weight: bold;
+}

@@ -63,6 +63,9 @@
   {{ end }}
 
   <main class="content container main-container">
+  {{ if ( and .Params.showRainbowSlogan (fileExists "layouts/partials/rainbow-slogan.html")) }}
+    {{ partial "rainbow-slogan.html" . }}
+  {{ end }}
   {{ block "main" . -}}{{- end }}
   </main>
 
