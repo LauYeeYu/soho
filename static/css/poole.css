@@ -106,13 +106,18 @@ p {
   p {
     text-align: justify;
   }
+  li {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 65em) {
   p {
     text-align: left;
   }
-  
+  li {
+    text-align: left;
+  }
 }
 
 strong {
