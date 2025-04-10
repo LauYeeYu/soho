@@ -255,11 +255,14 @@ img {
 /* Tables */
 table {
   margin-bottom: 1rem;
-  width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
   overflow-x: auto;
   display: block;
+  white-space: nowrap;
+  /* Prevent stretching when narrow */
+  width: fit-content;
+  max-width: 100%;
   font-size: 90%;
 }
 td,
