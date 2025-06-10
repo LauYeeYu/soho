@@ -600,6 +600,66 @@ a.series:hover {
   position: relative;
 }
 
+.banner {
+  width: 100%;
+  position: absolute;
+  padding-left: 1.5rem; /* 0.5rem more because of the letter-spacing */
+  padding-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.banner-text {
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+@media (min-width: 48em) {
+  .banner {
+    margin-left: 28%;
+    width: 72%;
+  }
+  .banner-text {
+    padding-left: 6%;
+    padding-right: 2em;
+    max-width: 50rem;
+    color: #ffffff;
+  }
+}
+
+.spaced-text {
+  text-align: justify-all;
+  text-align-last: justify;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 20em) {
+  .spaced-text {
+    letter-spacing: 0.25rem;
+  }
+}
+
+@media (min-width: 28em) {
+  .spaced-text {
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (min-width: 58em) {
+  .spaced-text {
+    letter-spacing: 0.9rem;
+  }
+}
+
+.serif-font {
+  font-family: 'SF Pro', 'Georgia', 'PT Serif', 'Times New Roman', Times, serif;
+}
+
+.crimson-background {
+  background-color: #a51c30;
+}
+
 @media (min-width: 48em) {
   .rainbow-slogan-text {
     right: 14.5rem;

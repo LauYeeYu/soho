@@ -62,6 +62,9 @@
     {{ partial "sidebar.html" . }}
   {{ end }}
 
+  {{ if ( and .Site.Params.showVeritasBanner (fileExists "layouts/partials/veritas.html")) }}
+    {{ partial "veritas.html" . }}
+  {{ end }}
   <main class="content container main-container">
   {{ if ( and .Params.showRainbowSlogan (fileExists "layouts/partials/rainbow-slogan.html")) }}
     {{ partial "rainbow-slogan.html" . }}
