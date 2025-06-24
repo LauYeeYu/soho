@@ -415,6 +415,8 @@ figure > img {
 figcaption {
   text-align: center;
   font-size: 80%;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .tagline {
