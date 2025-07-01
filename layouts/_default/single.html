@@ -7,10 +7,10 @@
 
   {{ if ne .Type "page" -}}
   <div class="post-date">
-    {{ if isSet .Params "lastmod" }}
-    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" }}">Modified on {{ .Lastmod.Format "Jan 2, 2006" }}</time>
+    {{ if and (isSet .Params "lastmod") (ne .Lastmod .Date) }}
+    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" }}">Modified on {{ .Lastmod.Format "2 Jan 2006" }}</time>
     {{ else }}
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "2 Jan 2006" }}</time>
     {{ end }}
     <span>&middot; {{ .ReadingTime }} min read</span>
     {{ if and (isSet .Params "categories") (gt (len .Params.categories) 0) }} 
