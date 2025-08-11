@@ -100,24 +100,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 0.6rem;
-}
-
-@media (min-width: 65.001em) {
-  p {
-    text-align: justify;
-  }
-  li {
-    text-align: justify;
-  }
-}
-
-@media (max-width: 65em) {
-  p {
-    text-align: left;
-  }
-  li {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 strong {
