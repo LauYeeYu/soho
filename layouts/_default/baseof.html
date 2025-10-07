@@ -62,7 +62,7 @@
     {{ partial "sidebar.html" . }}
   {{ end }}
 
-  {{ if ( and .Site.Params.showVeritasBanner (fileExists "layouts/partials/veritas.html")) }}
+  {{ if ( and .Params.showVeritasBanner (fileExists "layouts/partials/veritas.html")) }}
     {{ partial "veritas.html" . }}
   {{ end }}
   <main class="content container main-container">
